@@ -1,8 +1,10 @@
-def hasUniqueChars(s):
+def getUniqueChars(s):
 	d = {}
+	u = ''
 	for char in s:
 		if d.get(char):
-			return False
+			pass
 		else:
 			d[char] = 1
-	return True
+			u+=char
+	return u
